@@ -1,0 +1,105 @@
+.input-checkbox--achievements-1 {
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+}
+
+.input-checkbox--achievements-2 {
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+}
+
+.input-checkbox--achievements-3 {
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+}
+
+.input-checkbox--achievements-4 {
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    height: 35px;
+    margin-top: 42px;
+  }
+}
+
+.input-checkbox--achievements-5 {
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    height: 35px;
+    margin-top: 42px;
+  }
+}
+
+.input-checkbox--achievements-6 {
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    height: 35px;
+    margin-top: 42px;
+  }
+}
+
+.input-checkbox__wrapper {
+  padding: 0 20px;
+  margin-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.input-checkbox__input {
+  display: none;
+}
+
+.input-checkbox__label {
+  display: flex;
+  align-items: center;
+
+  font-size: 18px;
+  line-height: 30px;
+  color: $main-text;
+
+  @media (min-width: $desktop-width) {
+    letter-spacing: -0.5px;
+  }
+}
+
+.input-checkbox__label::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+  box-sizing: border-box;
+  border-radius: 1px;
+  border: 2px solid $border-grey;
+  background-color: #ffffff;
+}
+
+.input-checkbox__input:checked + label::before {
+  background: #ffffff url("../img/form/tick.svg") no-repeat center center;
+}
+
+.input-checkbox__input:hover + label::before {
+  border: 2px solid #bababa;
+}
+
+.input-checkbox__input:active + label,
+.input-checkbox__input:active + label::before {
+  background: url("../img/form/tick.svg") no-repeat center center;
+  opacity: 0.3;
+}

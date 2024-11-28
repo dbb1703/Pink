@@ -1,0 +1,59 @@
+.logo {
+  use {
+    fill: white;
+  }
+
+  &:hover use,
+  &:hover svg symbol,
+  &:hover svg symbol g {
+    fill: $accent-text;
+  }
+
+  &:active use,
+  &:active svg symbol,
+  &:active svg symbol g {
+    fill: rgba(#ffffff, 0.3);
+  }
+}
+
+.logo__svg {
+  width: 74px;
+  height: 23px;
+
+  @media (min-width: $tablet-width) {
+    width: 145px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 147px;
+  }
+}
+
+.logo__desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.logo__tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.logo__mobile {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

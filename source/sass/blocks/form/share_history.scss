@@ -1,0 +1,146 @@
+.share_history__form {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
+.share_history__main-text {
+  margin: 38px 20px 39px;
+
+  text-align: center;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
+    width: 490px;
+
+    margin: 70px auto 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-bottom: 79px;
+  }
+}
+
+.share_history__secondary-text {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+}
+
+.share_history__user-info {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin: 0 20px 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 412px;
+    padding-top: 14px;
+  }
+}
+
+.share_history__achievements {
+  padding: 1px;
+  background-color: $background-grey;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+    background-color: unset;
+    box-sizing: border-box;
+    width: 620px;
+    margin: 0 20px 61px;
+    padding-bottom: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    height: 231px;
+    margin: 0;
+    padding: 0 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 35px;
+    grid-column-gap: 42px;
+  }
+}
+
+.share_history__contacts {
+  margin-top: 31px;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    box-sizing: border-box;
+    margin: 61px 20px 61px;
+    order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 56px 0 61px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.share_history__apps {
+  background-color: $background-grey;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 620px;
+    background-color: unset;
+    margin: 0 20px;
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 433px;
+    margin-right: 0;
+    padding-bottom: 15px;
+  }
+}
+
+.share_history__emotions {
+  margin-top: 42px;
+
+
+  @media (min-width: $tablet-width) {
+    order: 5;
+    margin: 0 20px;
+    box-sizing: border-box;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin: 61px 0 0;
+  }
+}
+
+.share_history__form-submit {
+  @media (min-width: $tablet-width) {
+    order: 6;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}

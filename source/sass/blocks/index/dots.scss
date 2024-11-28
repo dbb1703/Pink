@@ -1,0 +1,40 @@
+.dots__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots__item {
+  display: inline-block;
+  margin-left: 19px;
+  width: 4px;
+  height: 4px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: rgba($secondary-background, 0.3);
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.dots__item--active {
+  width: 6px;
+  height: 6px;
+
+  background-color: transparent;
+  border: 3px solid $secondary-background;
+
+  &:hover,
+  &:active {
+    opacity: 1;
+  }
+}

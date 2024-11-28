@@ -1,0 +1,47 @@
+.footer-logo {
+  use {
+    fill: $secondary-background;
+  }
+
+  &:hover use,
+  &:hover svg symbol,
+  &:hover svg symbol g {
+    fill: $accent-text;
+  }
+
+  &:active use,
+  &:active svg symbol,
+  &:active svg symbol g {
+    fill: rgba($main-text, 0.3);
+  }
+}
+
+.footer-logo__svg {
+  width: 145px;
+  height: 40px;
+
+  @media (min-width: $desktop-width) {
+    width: 147px;
+  }
+}
+
+.footer-logo__desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.footer-logo__desktop-glasses,
+.footer-logo__tablet-glasses {
+  fill: $accent-text;
+}
+
+.footer-logo__tablet {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

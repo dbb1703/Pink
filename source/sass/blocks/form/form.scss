@@ -1,0 +1,87 @@
+.form__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__fieldset--bordered {
+  @media (min-width: $tablet-width) {
+    border: 2px solid $border-grey;
+    border-radius: 1px;
+    background-color: unset;
+  }
+}
+
+.form__field {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 39px;
+  }
+}
+
+.form__legend {
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 41px 48px 44px 51px;
+
+  line-height: 18px;
+  color: $accent-text;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::after {
+    clear: both;
+  }
+
+  @media (min-width: $tablet-width) {
+    float: none;
+  }
+}
+
+.form__legend--contacts {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 260px;
+    padding: 0;
+    margin: 0 auto 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 37px;
+  }
+}
+
+.form__legend--achievements {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0 auto;
+    width: 436px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 4;
+    margin: 0 auto 13px;
+  }
+}
+
+.form__legend--emotions {
+  margin: 0 auto;
+  padding: 0 0 18px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 260px;
+    padding: 0;
+  }
+}

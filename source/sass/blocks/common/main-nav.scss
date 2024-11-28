@@ -1,0 +1,16 @@
+.main-nav__toggle {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav--nojs {
+  .site-list--closed {
+    display: block;
+  }
+}

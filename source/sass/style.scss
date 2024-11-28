@@ -1,0 +1,50 @@
+// Global
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/common.scss";
+
+// Common
+@import "blocks/common/page.scss";
+@import "blocks/common/main-nav.scss";
+@import "blocks/common/site-list.scss";
+@import "blocks/common/nav-toggle.scss";
+@import "blocks/common/logo.scss";
+@import "blocks/common/header";
+@import "blocks/common/button.scss";
+@import "blocks/common/footer.scss";
+@import "blocks/common/social.scss";
+@import "blocks/common/table.scss";
+@import "blocks/common/br.scss";
+@import "blocks/common/pop-up.scss";
+@import "blocks/common/footer-logo.scss";
+
+// Index
+@import "blocks/index/apps.scss";
+@import "blocks/index/features.scss";
+@import "blocks/index/reviews.scss";
+@import "blocks/index/time-effect.scss";
+@import "blocks/index/dots.scss";
+@import "blocks/index/price.scss";
+@import "blocks/index/table.scss";
+@import "blocks/index/contacts.scss";
+
+// Form
+@import "blocks/form/form.scss";
+@import "blocks/form/share_history.scss";
+@import "blocks/form/input-text.scss";
+@import "blocks/form/input-checkbox.scss";
+@import "blocks/form/input-radio.scss";
+@import "blocks/form/textarea.scss";
+@import "blocks/form/field.scss";
+@import "blocks/form/form-app.scss";
+@import "blocks/form/form-submit.scss";
+
+// Gallery
+@import "blocks/photo/gallery.scss";
+@import "blocks/photo/card-gallery.scss";
+@import "blocks/photo/upload.scss";
+@import "blocks/photo/form.scss";
+@import "blocks/photo/input-radius.scss";
+
+// Visually-hidden
+@import "global/visually-hidden.scss";

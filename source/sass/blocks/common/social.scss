@@ -1,0 +1,30 @@
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8px;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  border: 3px solid rgba($secondary-background, 0.1);
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:hover {
+    border-color: $secondary-background;
+  }
+
+  &:active {
+    border-color: rgba($secondary-background, 0.1);
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 11px;
+  }
+}

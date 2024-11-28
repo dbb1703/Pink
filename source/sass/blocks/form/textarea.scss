@@ -1,0 +1,32 @@
+.textarea__text {
+  width: calc(100% - 44px);
+  box-sizing: border-box;
+  padding: 12px 25px 22px 20px;
+  margin: 0 22px 0;
+  border: 2px solid $border-grey;
+  border-radius: 1px;
+  resize: none;
+
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: -0.5px;
+  color: $main-text;
+
+  &::placeholder {
+    color: $main-text;
+    opacity: 0.8;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 42px 60px 45px;
+    width: calc(100% - 120px);
+    padding: 13px 20px 23px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 19px;
+    margin-top: 36px;
+    margin-bottom: 38px;
+    letter-spacing: 0;
+  }
+}

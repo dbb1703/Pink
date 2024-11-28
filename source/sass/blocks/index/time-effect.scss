@@ -1,0 +1,67 @@
+.time-effect__icon {
+  order: 1;
+
+  width: 238px;
+  height: 276px;
+
+  @media (min-width: $desktop-width) {
+    width: 298px;
+    height: 345px;
+
+    margin-bottom: 67px;
+  }
+}
+
+.time-effect__wrapper {
+  order: 2;
+
+  margin-left: 72px;
+  margin-right: 20px;
+}
+
+.time-effect__br--tablet {
+  display: inline;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.time-effect__br--desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
+.time-effect__title {
+  font-family: $open-bold;
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 18px;
+
+  @media (min-width: $desktop-width) {
+    line-height: 30px;
+
+    margin-top: 99px;
+  }
+}
+
+.time-effect__text {
+  margin-bottom: 10px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+
+    margin-bottom: 35px;
+  }
+}
+
+.time-effect__link {
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

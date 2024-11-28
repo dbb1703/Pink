@@ -1,0 +1,31 @@
+.price__wrapper {
+  background-color: $background-grey;
+  padding-top: 82px;
+  padding-bottom: 46px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 63px;
+    padding-bottom: 98px;
+  }
+}
+
+.price__dots {
+  margin-top: 42px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.price__table {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+}

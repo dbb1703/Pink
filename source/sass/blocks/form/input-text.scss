@@ -1,0 +1,120 @@
+.input-text__label {
+  display: block;
+  margin-bottom: 7px;
+  margin-left: 43px;
+
+  text-align: left;
+  text-transform: uppercase;
+  color: $accent-text;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.input-text__input {
+  width: 276px;
+  height: 59px;
+  box-sizing: border-box;
+  padding: 0 23px;
+  margin: 0 auto 20px;
+  border: 2px solid $border-grey;
+
+  font-size: 18px;
+  line-height: 30px;
+  color: $main-text;
+
+  &:hover {
+    border-color: $secondary-background;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $accent-text;
+  }
+
+  &::placeholder {
+    color: $secondary-background;
+    opacity: 0.8;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin: 0 0 0 20px;
+  }
+}
+
+.input-text__input--icon {
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 59px);
+    padding-right: 23px;
+    margin-right: 0;
+    margin-left: 0;
+    position: relative;
+    order: 1;
+  }
+}
+
+.input-text__input--warning {
+  border-color: $accent-text;
+}
+
+.input-text--icon {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto 41px;
+    width: 500px;
+    align-items: center;
+
+    &:last-child {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 371px;
+    margin-right: 0;
+    margin-bottom: 0;
+
+    &:first-of-type {
+      margin-left: 60px;
+    }
+
+    &:last-of-type {
+      margin-right: 60px;
+      margin-bottom: 21px;
+    }
+  }
+}
+
+.input-text__label--icon {
+  @media (min-width: $tablet-width) {
+    order: 3;
+    margin-top: 12px;
+    margin-left: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input-text--lastname {
+    margin-bottom: 58px;
+  }
+
+  .input-text--name {
+    margin-bottom: 51px;
+  }
+
+  .input-text--patronymic {
+    margin-bottom: 0;
+  }
+}

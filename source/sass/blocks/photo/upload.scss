@@ -1,0 +1,46 @@
+.upload__main-text {
+  margin: 33px 20px 36px;
+  text-align: center;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 61px;
+    margin-bottom: 66px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 29px;
+    margin-bottom: 69px;
+  }
+}
+
+.upload__form {
+  background-color: $background-grey;
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 57px 20px 13px 20px;
+    display: grid;
+    grid-template-columns: 300px 275px;
+    grid-column-gap: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    max-width: 940px;
+    margin: 0 auto;
+    grid-template-columns: 300px 410px;
+    grid-column-gap: 100px;
+    justify-content: center;
+    padding-bottom: 57px;
+  }
+}
+
+.upload__fieldset {
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+}

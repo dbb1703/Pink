@@ -1,0 +1,43 @@
+.form-submit__wrapper {
+  text-align: center;
+  margin-top: 43px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 50px 22px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 50px 0 0;
+  }
+}
+
+.form-submit__text {
+  text-transform: uppercase;
+  font-size: 14px;
+
+  margin-top: 37px;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.form-submit__warning {
+  color: $accent-text;
+}
+
+.form-submit__additional-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
+}

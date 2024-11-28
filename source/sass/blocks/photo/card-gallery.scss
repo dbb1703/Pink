@@ -1,0 +1,142 @@
+.card-gallery__picture-wrapper--accent {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 140px;
+    height: 36px;
+    background: url("../img/photo/panorama-of-the-day.png") no-repeat center
+      center;
+  }
+}
+
+.card-gallery__picture {
+  display: flex;
+}
+
+.card-gallery__picture--accent {
+  width: 320px;
+  margin-left: -20px;
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% + 40px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% + 260px);
+    margin-left: -130px;
+  }
+}
+
+.card-gallery__text-wrapper {
+  background-color: $background-grey;
+  padding: 15px 10px 13px 17px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 12px 30px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 31px 24px 27px;
+  }
+}
+
+.card-gallery__author {
+  font-family: $open-bold;
+  line-height: 24px;
+}
+
+.card-gallery__time {
+  text-transform: uppercase;
+  font-family: $open-light;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.card-gallery__text {
+  @media (min-width: $tablet-width) {
+    max-width: 300px;
+    height: 68px;
+    overflow: hidden;
+  }
+}
+
+.card-gallery__like {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-top: 13px;
+  color: $accent-text;
+
+  &::before,
+  &::after {
+    display: inline-block;
+    margin-right: 18px;
+    content: "";
+    width: 13px;
+    height: 12px;
+    background: url("../img/photo/heart.svg") no-repeat center center;
+  }
+
+  &::after {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    //
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: inline-block;
+      margin-right: 0;
+      margin-left: 16px;
+    }
+  }
+}
+
+.card-gallery__text-wrapper--accent {
+  padding-top: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 25px;
+  }
+}
+
+.card-gallery__text-wrapper--accent .card-gallery__author {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
+.card-gallery__text-wrapper--accent .card-gallery__like {
+  @media (min-width: $tablet-width) {
+    order: 2;
+    width: auto;
+  }
+}
+
+.card-gallery__text-wrapper--accent .card-gallery__text {
+  @media (min-width: $tablet-width) {
+    order: 3;
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    letter-spacing: -0.1px;
+  }
+}
